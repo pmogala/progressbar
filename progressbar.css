@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins', sans-serif ;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: skyblue;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+.likes h2{
+    font-weight: 340;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    margin-bottom: 35px;
+    color: sienna;
+    font-size: 16px;
+}
+.progress-bar{
+    background: gray;
+    width: 600px;
+    height: 15px;
+    border-radius: 6px;
+}
+.progress-bar div{
+    height: 15px;
+    border-radius: 6px;
+    width: 0%;
+
+}
+.progress-bar div span{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: pink;
+    float: right;
+    margin-top: -15px;
+    margin-right: -20px;
+    color:black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.music{
+    background: palegreen;
+    animation: music 1.5s linear forwards;
+}
+.travelling{
+    background: crimson;
+    animation: travelling 1.5s linear forwards;
+}
+.reading{
+    background: coral;
+    animation: reading 1.5s linear forwards;
+}
+.programing{
+    background: greenyellow;
+    animation: programing 1.5s linear forwards;
+}
+.sleeping{
+    background: yellow;
+    animation: sleeping 1.5s linear forwards;
+}
+.music span{
+    border: 1px solid black;
+}
+.travelling span{
+    border: 1px solid rebeccapurple;
+}
+.reading span{
+    border: 1px solid maroon;
+}
+.programing span{
+    border: 1px solid royalblue;
+}
+.sleeping span{
+    border: 1px solid mediumblue;
+}
+@keyframes music{
+    100%{
+        width: 96%;
+    }
+}
+@keyframes travelling{
+    100%{
+        width: 86%;
+    }
+}
+@keyframes reading{
+    100%{
+        width: 75%;
+    }
+}
+@keyframes programing{
+    100%{
+        width: 70%;
+    }
+}
+@keyframes sleeping{
+    100%{
+        width: 50%;
+    }
+}
